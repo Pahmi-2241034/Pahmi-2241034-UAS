@@ -1,0 +1,48 @@
+### Create Category
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "name": "Electronics"
+}
+
+### Get Categories
+GET http://localhost:3000/categories
+
+### Create Product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "category": "CATEGORY_ID",
+  "stock": 10
+}
+
+### Get Products
+GET http://localhost:3000/products
+
+### Create Supplier
+POST http://localhost:3000/suppliers
+Content-Type: application/json
+
+{
+  "name": "ABC Suppliers",
+  "contact": "123-456-789"
+}
+
+### Get Suppliers
+GET http://localhost:3000/suppliers
+
+### Create Purchase
+POST http://localhost:3000/purchases
+Content-Type: application/json
+
+{
+  "supplier": "SUPPLIER_ID",
+  "product": "PRODUCT_ID",
+  "quantity": 5
+}
+
+### Get Purchases
+GET http://localhost:3000/purchases
